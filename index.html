@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudadanía Digital 13: Monzón</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 13: Monzón</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">👁️</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Comprender el tema "¿Y Si la IA Aprende Mal?" (ACD, ERD).</li>
+                                        <li>Entender cómo los datos injustos generan consecuencias.</li>
+                                        <li>Analizar qué pasa cuando la IA ve ejemplos repetidos con estereotipos (ej. solo hombres como ingenieros).</li>
+                                        <li>Comprender cómo esa “memoria injusta” afecta sus decisiones.</li>
+                                        <li>Reflexionar sobre cómo la privacidad también importa: si comparto mis gustos o fotos, eso alimenta el aprendizaje de las IAs.</li>
+                                        <li>Identificar qué podemos hacer para que la IA sea más justa.</li>
+                                        <li>Identificar cómo los sesgos en los datos generan decisiones injustas en la IA.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago</strong></li>
+                                        <li><strong class="tactic-highlight">Conexión Ada</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge Express: El Generador de Imágenes Sesgado</strong></li>
+                                        <li><strong class="tactic-highlight">Ticket de Salida/Tweet de Aprendizaje</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Participación en la simulación de generación de imágenes con sesgo.</li>
+                                        <li>Análisis en equipo de la falta de diversidad en los resultados.</li>
+                                        <li>Propuesta en equipo de ideas concretas para mejorar los datos de entrenamiento.</li>
+                                        <li>Creación individual de un "Principio sobre la Construcción de IA Justa" (Tweet de Aprendizaje).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Recuerdo Relámpago ⏰ 5 minutos</h2>
+                <p>Activar conocimientos de la Misión 12 (sesgos en IA) a través de la síntesis conceptual.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 2. Recuerdo Relámpago: El Reto del Orden Perdido.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Vamos a iniciar con un análisis rápido. Les mostraré conceptos que forman una frase clave de la misión pasada, pero están fuera de orden. En equipo, reconstruyan la secuencia lógica que seguimos para entender el problema de la IA injusta. 🤔<br>(En pantalla: a que tomen una, Decisión Injusta, Los, Algoritmo Sesgado, llevan a un, Datos de Entrenamiento Incompletos)<br>La secuencia es: Los Datos de Entrenamiento Incompletos llevan a un Algoritmo Sesgado, a que tomen una Decisión Injusta”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Realiza una breve reflexión guiada para profundizar en la causa del sesgo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Correcto. La secuencia es: Los Datos de Entrenamiento Incompletos llevan a un Algoritmo Sesgado, a que tomen una Decisión Injusta. La misión pasada nos mostró un algoritmo sesgado por casualidad. Hoy, veremos un problema más profundo: ¿qué pasa cuando los datos reflejan los estereotipos de nuestra sociedad? Un monzón es una lluvia intensa y persistente que lo inunda todo. Los estereotipos pueden ser así, inundando los datos con los que aprende la IA. ⛈️ ¿Cómo podemos solucionarlo?”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Conexión Ada ⏰ 22 minutos</h2>
+                <p>Explorar de forma individual cómo los estereotipos de género o profesión en los datos pueden llevar a una IA a generar resultados predecibles y limitados.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conexión Ada ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 3. Conexión Ada: Misión Monzón.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Ahora, conéctense a la plataforma. Ada les mostrará cómo una IA entrenada con fotos de internet podría responder a la orden ‘dibuja un científico’. Analicen los resultados y las implicaciones. La clave de activación de hoy es: Misión Monzón. Escríbanla cuando se las pida.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión Ada ⏰ 20 minutos</h3>
+                            <p>Proyecta Diapositiva 4. Timer 20 min.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Challenge Express ⏰ 10 minutos</h2>
+                <p>Contextualizar cómo una IA generativa puede perpetuar estereotipos basados en sus datos de entrenamiento.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 5. Challenge Express: El Generador de Imágenes Sesgado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Atención, equipos. Hoy se convertirán en una IA generadora de imágenes. Han sido entrenados con millones de imágenes de internet, pero esas imágenes estaban llenas de estereotipos comunes. Su programación ha aprendido estos patrones:<br>• Los doctores son hombres.<br>• Las enfermeras son mujeres.<br>• Las personas que se dedican a la ciencia son mayores y con el pelo revuelto.<br>• Los gamers son chicos jóvenes en su habitación.<br>Este es su reto: Yo seré el usuario y les daré órdenes (prompts). Ustedes, como IA, deben dibujar rápidamente lo primero que su ‘programación’ les dicte, siguiendo el estereotipo que aprendieron.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Challenge Express ⏰ 4 minutos</h3>
+                            <p>Proporciona 3 prompts. Pide a los equipos que dibujen rápidamente la imagen estereotipada en una hoja o pizarra pequeña para cada prompt.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"“Preparen sus herramientas de dibujo (cuaserno y lápiz). Como IA, no pueden ser creativos, solo obedecer su patrón. <br>1. Primer prompt: ‘Dibuja una persona cuidando a un enfermo’.<br>2. Segundo prompt: ‘Dibuja a alguien en un laboratorio’.<br>3. Tercer prompt: ‘Dibuja a un gamer profesional en un torneo’.<br>¡Generando imágenes en 3, 2, 1! Tienen 4 minutos para dibujar las 3 escenas.”"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Pide a los equipos que muestren sus dibujos. Guía la discusión sobre la falta de diversidad y por qué casi todos dibujaron lo mismo, enfatizando la limitación de los datos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Muestren sus dibujos. Ahora, salgan de su programación. ¿Qué notan en todas las imágenes? ¿Vemos diversidad? ¿Por qué casi todos dibujaron lo mismo? El problema no es su falta de creatividad, es la limitación de los datos con los que ‘aprendieron’. Ahora, la pregunta clave: ¿Qué tipo de imágenes necesitaríamos añadir a los datos para que la IA genere resultados más justos y variados?”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Pide a los equipos que compartan sus propuestas para "re-entrenar" a la IA con imágenes específicas que rompan los estereotipos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Es buena idea compartir lo que piensan. ¿Qué imágenes específicas agregarían para romper los estereotipos? Por ejemplo, ‘fotos de doctoras’, ‘fotos de enfermeros’, ‘fotos de científicas jóvenes’. Escuchar otras propuestas nos ayuda a construir una solución más completa.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Ticket de Salida/Tweet de Aprendizaje ⏰ 5 minutos</h2>
+                <p>Sintetizar el aprendizaje en un principio personal sobre la responsabilidad en la creación de datos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 9. Tweet de Aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Para cerrar, anoten una idea clave que se quieran llevar. Una frase que resuma su compromiso para construir una IA más justa.<br>Ejemplo del maestro: Una IA justa no nace, se construye. Empieza con datos que reflejen el mundo como es, no como los estereotipos dicen que es. #IAConsciente<br>Piensen en cómo podrían aplicar esto en otra situación. Eso es lo que vale la pena.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Pide a los estudiantes que compartan su frase con un compañero y escuchen su idea.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Compartan su frase con la persona de al lado. Escuchen su idea. ¿En qué se parecen? ¿Qué pueden aprender de su perspectiva? El análisis mejora con el diálogo.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Ticket de Salida/Tweet de Aprendizaje ⏰ 1 minutos</h3>
+                            <p>Proyecta Diapositiva 10. Reflexión final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Hoy no solo identificaron un problema, propusieron soluciones. Entendieron que la tecnología no es neutral; refleja los sesgos de quienes la crean y la alimentan. Ustedes tienen el poder de exigir y ayudar a construir una IA más justa. Esa es una responsabilidad enorme. Misión completada.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
